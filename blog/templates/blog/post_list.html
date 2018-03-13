@@ -1,33 +1,19 @@
 <!DOCTYPE>
 <html>
 <head>
-	<title>Bianca learning django</title>
-	<style>
-body {
-font-family:"Arial";
-font-size:20;
-background-color: #66ff33;
-}
-	</style>
+<title>blog</title>
 </head>
 <body>
-	<div style="text-align:center;">
-	<h1>Bianca learning django</h1>
-	<p>Hello, my name is Bianca, and this is the result of my journey in django and HTML</p>
-	<p>It's pretty low key, to be optmistic</p>
-	</div>
-
-	<div>
+<div>
     <h1><a href="/">Django Girls Blog</a></h1>
 </div>
 
 {% for post in posts %}
-    <section class="post">
+    <div>
         <p>published: {{ post.published_date }}</p>
-        <h1><a href="/">{{ post.title }}</a></h1>
+        <h1><a href="">{{ post.title }}</a></h1>
         <p>{{ post.text|linebreaksbr }}</p>
-    </section>
+    </div>
 {% endfor %}
-	
 </body>
 </html>
